@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(70, 43, 226);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(15, 15, 182);
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(152, 152, 253);
+    font-size: 1.02rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.leftSection {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin: 0 0 0 6rem;
+}
+
+.firstSection>div {
+    width: 35%;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.blue {
+    font-size: 3.2rem;
+    color: rgb(11, 11, 124);
+}
+
+.leftSection .btn, .button .btn  {
+    padding: 12px;
+    background-color: rgb(15, 15, 182);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.leftSection .btn a, .button .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+#about {
+    margin-bottom: 10rem;
+}
+
+.about-item {
+    margin: 16rem 0 2rem 0;
+}
+
+.title-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-firstSection>div {
+    width: 40%;
+
+}
+
+.about-leftSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.about-rightSection {
+    font-size: 1.5rem;
+}
+
+.about-leftSection .abt-img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+#skill {
+    margin-bottom: 100px;
+}
+
+.section-title {
+    font-size: 2rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.skills-section {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.skills-content {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 2rem 30rem;
+    gap: 25px 0;
+    margin-top: 2rem;
+}
+
+.skills-name:hover {
+    background-color: white;
+    color: rgb(15, 15, 182);
+    ;
+    font-weight: 700;
+
+}
+
+.skills-name {
+    padding: 10px;
+    margin: 8px;
+    background-color: rgb(11, 11, 124);
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.portfolio-section {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.project-firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-firstSection>div {
+    width: 40%;
+
+}
+
+.project-leftSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.project-rightSection {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.project-leftSection img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.link{
+    padding-top: 1.5rem;    
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 8rem 0;
+   line-height: 1.5;
+
+}
+
+.contact-content div p {
+ cursor: pointer;
+}
+
+.contact-content a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: rgb(15, 15, 182);
+}
+
+.footer {
+    display: flex;
+    padding: 25px 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-sec ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer-sec ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-sec ul li a:hover {
+    color: rgb(152, 152, 253);
+}
+
+footer .footer-rights {
+    text-align: center;
+    padding: 12px 0;
+}
+
+@media screen and (max-width: 500px) {
+
+    .firstSection {
+        flex-direction: column-reverse;
+       text-align: center;
+     
+    }
+
+    .leftSection {
+        padding-right: 6rem;
+        
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    .leftSection div, .leftSection span {
+    font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 1150px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 150vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-firstSection {
+        flex-direction: column-reverse;
+       align-items: center;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .about-description {
+    font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .skills-content {
+    padding: 0 6rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .skills-content {
+       grid-template-columns: repeat(3, 1fr);
+       padding: 0 5rem;
+}
+}
+
+@media screen and (max-width: 850px) {
+    .skills-content {
+     align-items: center;
+     justify-content: center;
+     padding: 0 4rem;
+}
+}
+
+@media screen and (max-width: 650px) {
+    .skills-content{
+    align-items: center;
+    padding: 0 4rem;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .project-rightSection h2 {
+    font-size: 1.5rem;
+    }
+
+    .project-rightSection p{
+        font-size: 1rem;
+    }
+
+
+.project-rightSection .btn{
+    font-size: 0.8rem;
+}
+}
+
+
+@media screen and (max-width: 450px) {
+    .project-rightSection h2 {
+        font-size: 1.2rem;
+        }
+    
+        .project-rightSection p{
+            font-size: 0.8rem;
+        }
+    
+    
+    .project-rightSection .btn{
+        font-size: 0.6rem;
+    }
+    }
+
