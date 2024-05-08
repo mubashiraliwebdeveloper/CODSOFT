@@ -67,6 +67,8 @@ nav ul li a:hover{
 
 .rightSection img {
     width: 80%;
+    border: 2px solid rgb(11, 11, 124);
+    border-radius: 50%;
 }
 
 .blue {
@@ -263,12 +265,11 @@ footer .footer-rights {
     padding: 12px 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .firstSection {
         flex-direction: column-reverse;
        text-align: center;
-     
     }
 
     .leftSection {
@@ -276,14 +277,40 @@ footer .footer-rights {
         
     }
 }
+@media screen and (max-width: 600px) {
+    .leftSection>div {
+       position: relative;
+       top: 70px;
+       right: 150px;
+       width: 450px;
+    }
 
+    .rightSection img {
+        transform: scale(2);
+        margin: 3rem 0;
+    }
+
+    .about-description{
+        width: 420px;
+        position: relative;
+        right: 60px;
+        transform: scale(1.2);
+        margin: 4rem 2rem 5rem 0;
+    }
+.about-rightSection p{
+font-size: 1.3rem;
+}
+    .about-leftSection img{
+        transform: scale(2);
+    }
+}
 
 @media screen and (max-width: 920px) {
     .leftSection div, .leftSection span {
     font-size: 2.2rem;
     }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 600px) {
     nav {
         flex-direction: column;
     }
@@ -335,34 +362,48 @@ footer .footer-rights {
 }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .project-rightSection h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     }
 
     .project-rightSection p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
 
 .project-rightSection .btn{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 }
 
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
+    .project-firstSection {
+    flex-direction: column;
+    }
     .project-rightSection h2 {
-        font-size: 1.2rem;
+        font-size: 2.2rem;
+
         }
     
         .project-rightSection p{
-            font-size: 0.8rem;
+            font-size: 1.6rem;
         }
     
-    
     .project-rightSection .btn{
-        font-size: 0.6rem;
-    }
+        font-size: 2rem;
+        margin: 1rem 0 5rem 0;
     }
 
+    .project-leftSection img{
+        transform: scale(2);
+        margin: 4rem 0;
+        width: 100%;
+    }
+    .contact-content>div{
+        font-size: 1.5rem;
+    }
+
+    }
+
+   
